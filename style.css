@@ -1,0 +1,261 @@
+@charset "UTF-8";
+a {
+  text-decoration: none;
+}
+
+/* ここからヘッダー　*/
+.header {
+  height: 70px;
+}
+
+.top-header {
+  align-items: center;
+  height: inherit;
+}
+
+.top-header nav {
+  display: none;
+}
+
+.top-header__cta {
+  display: none;
+}
+
+.top-header__logo {
+  display: inline-block;
+  margin: 12px 0;
+}
+
+/* ここからfirst-view */
+.pc {
+  display: none;
+}
+
+.sp {
+  display: block;
+  width: 100vw;
+}
+
+.firstview-wrap {
+  border: 1px solid;
+  text-align: center;
+  position: relative;
+  width: 100vw;
+}
+
+.firstview-wrap__contents {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.firstview-wrap__contents__cta-btn--pc {
+  display: none;
+}
+
+.firstview-wrap__contents__ttl {
+  font-size: 32px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.firstview-wrap__contents__txt {
+  text-align: left;
+}
+
+.firstview-wrap__img {
+  position: absolute;
+  top: 30%;
+  left: 30px;
+  width: 100%;
+}
+
+.firstview-wrap__img img {
+  width: 80%;
+}
+
+.firstview-wrap__cta-btn--sp {
+  padding: 20px 80px;
+  margin-bottom: 200px;
+  background-color: #E37AB0;
+  border-radius: 30px;
+  display: inline-block;
+  color: white;
+}
+
+/* firstview終了 */
+/* ここからabout */
+.about-wrap {
+  background-color: #FFF7FB;
+  position: relative;
+  height: 420px;
+}
+
+.about-wrap__img {
+  width: 80%;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.about-wrap__txt {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 77%;
+  font-size: 16px;
+}
+
+/* about終了 */
+/* ここからtrouble */
+.trouble-wrap {
+  text-align: center;
+  height: 650px;
+}
+
+.trouble-wrap__ttl {
+  font-size: 26px;
+  margin: 70px 0 40px 0;
+}
+
+.trouble-wrap__card {
+  display: flex;
+  margin-bottom: 47px;
+  padding: 0 15px;
+}
+
+.trouble-wrap__card__txt {
+  font-size: 16px;
+  margin: auto 0;
+  text-align: left;
+}
+
+.trouble-wrap__card__img img {
+  width: 60%;
+}
+
+@media screen and (min-width: 769px) {
+  /* ここからヘッダー　*/
+  .top-header {
+    display: flex;
+    margin: auto 220px;
+    justify-content: space-between;
+  }
+  .top-header__nav {
+    display: flex;
+  }
+  .top-header nav {
+    display: block;
+    margin-left: 80px;
+  }
+  .top-header__cta {
+    display: block;
+    display: flex;
+  }
+  .top-header__list {
+    margin: 0 10px;
+  }
+  .top-header__cta-btn {
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 30px;
+    color: white;
+  }
+  .top-header .red {
+    background: #E37AB0;
+  }
+  .top-header .blue {
+    background: #6F99E3;
+    margin-left: 10px;
+  }
+  /* ヘッダー終了 */
+  /* ここからfirstview */
+  .pc {
+    display: block;
+  }
+  .sp {
+    display: none;
+  }
+  .firstview-wrap {
+    position: relative;
+  }
+  .firstview-wrap__contents {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 40%;
+  }
+  .firstview-wrap__contents__ttl {
+    font-size: 46px;
+    line-height: 53px;
+    margin-bottom: 25px;
+  }
+  .firstview-wrap__contents__txt {
+    margin-bottom: 25px;
+  }
+  .firstview-wrap__contents__cta-btn--pc {
+    background-color: #E37AB0;
+    padding: 20px 80px;
+    border-radius: 30px;
+    display: inline-block;
+    color: white;
+  }
+  .firstview-wrap__img {
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    width: 33%;
+  }
+  .firstview-wrap__img img {
+    width: 100%;
+  }
+  .firstview-wrap .firstview-wrap__cta-btn--sp {
+    display: none;
+  }
+  /* firstview終了 */
+  /* ここからabout */
+  .about-wrap {
+    position: relative;
+    height: 600px;
+    background-color: #FFF7FB;
+    align-items: center;
+  }
+  .about-wrap__txt {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 50%;
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .about-wrap__img {
+    position: absolute;
+    top: 10%;
+    left: -5%;
+    width: 55%;
+  }
+  /* about終了 */
+  /* ここからtrouble */
+  .trouble-wrap {
+    height: 600px;
+  }
+  .trouble-wrap__ttl {
+    font-size: 38px;
+  }
+  .trouble-wrap .card-wrap {
+    display: flex;
+  }
+  .trouble-wrap__card {
+    display: block;
+    width: 100%;
+  }
+  .trouble-wrap__card__img img {
+    width: 70%;
+  }
+  .trouble-wrap__card__txt {
+    text-align: center;
+    font-size: 22px;
+    width: 60%;
+    margin: 25px auto;
+  }
+}

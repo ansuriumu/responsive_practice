@@ -1,0 +1,252 @@
+a{
+  text-decoration: none;
+}
+
+/* ここからヘッダー　*/
+.header{
+  height: 70px;
+}
+
+.top-header{
+    align-items: center;
+    height: inherit;
+    nav{
+    display: none;
+  }
+  &__cta{
+    display: none;
+  }
+  &__logo{
+    display: inline-block;
+    margin: 12px 0;
+  }
+  }
+
+/* ここからfirst-view */
+.pc{
+  display: none;
+}
+
+.sp{
+  display: block;
+  width: 100vw;
+}
+
+.firstview-wrap{
+  border: 1px solid;
+  text-align: center;
+  position: relative;
+  width: 100vw;
+  &__contents{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    &__cta-btn--pc{
+      display: none;
+    }
+    &__ttl{
+      font-size: 32px;
+      margin-bottom: 25px;
+      text-align: left;
+    }
+    &__txt{
+      text-align: left;
+    }
+  }
+  &__img{
+    position: absolute;
+    top: 30%;
+    left: 30px;
+    width: 100%;
+    img{
+      width: 80%;
+    }
+  }
+  &__cta-btn--sp{
+    padding: 20px 80px;
+    margin-bottom: 200px;
+    background-color: #E37AB0;
+    border-radius: 30px;
+    display: inline-block;
+    color: white;
+  }
+}
+/* firstview終了 */
+
+/* ここからabout */
+.about-wrap{
+  background-color: #FFF7FB;
+  position: relative;
+  height: 420px;
+  &__img{
+    width: 80%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  }
+  &__txt{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 77%;
+    font-size: 16px;
+  }
+}
+/* about終了 */
+
+/* ここからtrouble */
+.trouble-wrap{
+  text-align: center;
+  height: 650px;
+  &__ttl{
+    font-size: 26px;
+    margin: 70px 0 40px 0;
+  }
+  &__card{
+    display: flex;
+    margin-bottom: 47px;
+    padding: 0 15px;
+    &__txt{
+      font-size: 16px;
+      margin: auto 0;
+      text-align: left;
+    }
+    &__img img{
+      width: 60%;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 769px){
+
+  /* ここからヘッダー　*/
+  .top-header{
+    display: flex;
+    margin: auto 220px;
+    justify-content: space-between;
+    &__nav{
+      display: flex;
+    }
+    nav{
+    display: block;
+    margin-left: 80px;
+  }
+  &__cta{
+    display: block;
+    display: flex;
+  }
+  &__list{
+    margin: 0 10px;
+  }
+  &__cta-btn{
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 30px;
+    color: white;
+  }
+  .red{
+    background: #E37AB0;
+  }
+  .blue{
+    background: #6F99E3;
+    margin-left: 10px;
+  }
+  }
+  /* ヘッダー終了 */
+
+  /* ここからfirstview */
+  .pc{
+    display: block;
+  }
+  .sp{
+    display: none;
+  }
+  .firstview-wrap{
+    position: relative;
+    &__contents{
+      position: absolute;
+      top: 20%;
+      left: 15%;
+      width: 40%;
+      &__ttl{
+        font-size: 46px;
+        line-height: 53px;
+        margin-bottom: 25px;
+      }
+      &__txt{
+        margin-bottom: 25px;
+      }
+      &__cta-btn--pc{
+        background-color: #E37AB0;
+        padding: 20px 80px;
+        border-radius: 30px;
+        display: inline-block;
+        color: white;
+      }
+    }
+    &__img{
+      position: absolute;
+      top: 10%;
+      left: 60%;
+      width: 33%;
+      img{
+        width: 100%;
+      }
+    }
+    .firstview-wrap__cta-btn--sp{
+      display: none;
+    }
+  }
+  /* firstview終了 */
+
+  /* ここからabout */
+  .about-wrap{
+    position: relative;
+    height: 600px;
+    background-color: #FFF7FB;
+    align-items: center;
+    &__txt{
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      width: 50%;
+      font-size: 38px;
+      line-height: 45px;
+    }
+    &__img{
+      position: absolute;
+      top: 10%;
+      left: -5%;
+      width: 55%;
+    }
+  }
+  /* about終了 */
+
+  /* ここからtrouble */
+
+  .trouble-wrap{
+    height: 600px;
+    &__ttl{
+      font-size: 38px;
+    }
+    .card-wrap{
+      display: flex;
+    }
+    &__card{
+      display: block;
+      width: 100%;
+      &__img img{
+        width: 70%;
+      }
+      &__txt{
+        text-align: center;
+        font-size: 22px;
+        width: 60%;
+        margin: 25px auto;
+      }
+    }
+  }
+
+}
