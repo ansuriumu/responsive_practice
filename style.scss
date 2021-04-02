@@ -176,10 +176,10 @@ a{
       }
     }
   }
-  /* solution終了 */
+/* solution終了 */
 
-  /* ここからfeature */
-  .feature-wrap{
+/* ここからfeature */
+.feature-wrap{
     text-align: center;
     padding: 70px 0px;
     &__ttl{
@@ -203,10 +203,10 @@ a{
       }
     }
   }
-  /* feature終了　*/
+/* feature終了　*/
 
-  /* ここからcta-section */
-  .cta-section{
+/* ここからcta-section */
+.cta-section{
     text-align: center;
     padding: 70px 18px;
     background-color: #E37AB0;
@@ -233,9 +233,9 @@ a{
       }
     }
   }
-  /* cta-section終了 */
+/* cta-section終了 */
 
-  /* ここからcase */
+/* ここからcase */
 .case-wrap{
   text-align: center;
   &__ttl{
@@ -245,21 +245,20 @@ a{
   &__items{
     display: flex;
     overflow-x: scroll;
-    white-space: nowrap;
   }
   &__item{
     box-shadow: 0px 0px 6px #DDDDDD;
-    position: relative;
     border-radius: 15px;
-    width: 90%;
+    min-width: 90%;
     margin-bottom: 100px;
     padding-bottom: 40px;
+    position: relative;
     img{
       width: 100%;
     }
     &--category{
       position: absolute;
-      top: 63%;
+      top: 57vw;
       left: 5%;
       padding: 5px 10px;
       background-color: white;
@@ -267,17 +266,174 @@ a{
     }
     &--name{
       text-align: left;
-      margin: 40px 0 20px 20px;
+      margin: 40px 0 20px 0;
     }
     &--txt{
+      text-align: left;
       width: 100%;
       font-size: 20px;
-      display: inline-block;
-      word-wrap: break-word;
+      display: block;
+      overflow-wrap: break-word;
     }
   }
 }
+/* ここからprice */
+.price-wrap{
+    text-align: center;
+    align-items: center;
+    &__ttl{
+      font-size: 26px;
+    }
+    &__card{
+      box-shadow: 0px 0px 6px #DEDEDE;
+      margin: 40px 20px;
+      border-radius: 15px;
+      &--header{
+        background-color: #6F99E3;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        p{
+          color: white;
+          padding: 10px 0 5px 0;
+        }
+        h2{
+          font-size: 38px;
+          color: white;
+          padding: 10px 0 10px 0;
+          span{
+            font-size: 22px;
+          }
+        }
+      }
+      &--header--pink{
+        background-color: #E37AB0;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        p{
+          color: white;
+          padding: 10px 0 5px 0;
+        }
+        h2{
+          font-size: 38px;
+          color: white;
+          padding: 10px 0 10px 0;
+          span{
+            font-size: 22px;
+          }
+        }
+      }
+      &--body{
+        p{
+          margin: 20px auto;
+          border-bottom: 1px solid #DEDEDE;
+          width: 300px;
+          line-height: 30px;
+          color: #535353;
+        }
+        a{
+          display: inline-block;
+          padding: 20px 100px;
+          background-color: #E8E8E8;
+          border-radius: 30px;
+          color: black;
+          margin: 15px 30px 30px 30px;
+          white-space: nowrap;
+          width: auto;
+        }
+      }
+    }
+  }
+/* price終了 */
 
+/* ここからqa */
+.qa-wrap{
+  padding: 70px 20px;
+  text-align: center;
+  &__ttl{
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+  .qa-list__item{
+    margin-bottom: 30px;
+    &--question{
+    padding: 20px 40px;
+    border: 1px solid #E37AB0;
+    color: #E37AB0;
+    border-radius: 15px;
+    text-align: left;
+    position: relative;
+    :before{
+      content: "Q";
+      position: absolute;
+      top: 57%;
+      left: 10px;
+      width: 30px;
+      height: 30px;
+      transform: translate(0, -50%);
+      font-size: 22px;
+      }
+      :after{
+      content: "∨";
+      position: absolute;
+      top: 62%;
+      right: 10px;
+      width: 30px;
+      height: 30px;
+      transform: translate(0, -50%);
+      color: black;
+      }
+    }
+    &--answer{
+      text-align: left;
+      padding: 20px 20px 20px 50px;
+      position: relative;
+      :before{
+      content: "A";
+      position: absolute;
+      top: 22%;
+      left: 10px;
+      width: 30px;
+      height: 30px;
+      transform: translate(0, -50%);
+      font-size: 22px;
+      color: #6F99E3;
+      font-weight: bold;
+      }
+    }
+  }
+}
+/* qa終了 */
+
+/* ここからフッター */
+.footer{
+  text-align: left;
+  background-color: #FFF7FB;
+  padding-top: 70px;
+  .top-footer{
+    img{
+      margin: 0px 0px 20px 30px;
+      display: inline-block;
+    }
+    &__contents{
+      margin-left: 70px;
+      line-height: 40px;
+    }
+  }
+  small{
+    margin: 0 auto;
+    display: block;
+  }
+}
+.footer__copy{
+  text-align: center;
+  background-color: #FFF7FB;
+  padding-top: 70px;
+  small{
+    padding: 20px 140px;
+    display: block;
+  }
+}
+/* フッター終了 */
 
 
 @media screen and (min-width: 769px){
@@ -504,7 +660,7 @@ a{
     }
   }
   /* cta-section終了 */
-  
+  /* ここからcase */
   .case-wrap{
     padding-bottom: 70px;
     &__ttl{
@@ -513,21 +669,95 @@ a{
     }
     &__items{
       overflow-x: visible;
+      white-space: normal;
       width: 100%;
     }
     &__item{
       margin: 0 15px;
-      width: 18%;
+      min-width: auto;
+      width: 100%;
+      position: relative;
+      &--name{
+        text-align: left;
+        margin: 40px 0 20px 0;
+      }
       img{
         width: 100%;
       }
       &--category{
         position: absolute;
-        top: 50%;
+        top: 11vw;
       }
       &--txt{
         word-wrap: break-word;
       }
+    }
+  }
+  /* case終了 */
+  /* ここからprice */
+  .price-wrap{
+    .blue{
+      height: 80%;
+    }
+    &__ttl{
+      font-size: 38px;
+    }
+    .card-wrap{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__card{
+      margin: 40px 0;
+    }
+  }
+  /* price終了 */
+  /* ここからqa */
+  .qa-wrap{
+    padding: 0 320px;
+    margin: 70px 0;
+    &__ttl{
+    font-size: 38px;
+  }
+  .qa-list__item{
+    &--question{
+    :before{
+      content: "Q";
+      position: absolute;
+      top: 58%;
+      left: 10px;
+      }
+      :after{
+      content: "∨";
+      position: absolute;
+      top: 62%;
+      right: 10px;
+      }
+    }
+    &--answer{
+      :before{
+      content: "A";
+      position: absolute;
+      top: 35%;
+      left: 10px;
+      }
+    }
+  }
+ }
+ /* qa終了 */
+ /* ここからフッター */
+  .footer{
+    .top-footer{
+      vertical-align: top;
+      display: flex;
+      justify-content: space-around;
+      padding-top: 70px;
+      position: relative;
+    }
+    img{
+      margin: initial;
+      display: block;
+      height: 90%;
     }
   }
 }

@@ -282,16 +282,15 @@ a {
 .case-wrap__items {
   display: flex;
   overflow-x: scroll;
-  white-space: nowrap;
 }
 
 .case-wrap__item {
   box-shadow: 0px 0px 6px #DDDDDD;
-  position: relative;
   border-radius: 15px;
-  width: 90%;
+  min-width: 90%;
   margin-bottom: 100px;
   padding-bottom: 40px;
+  position: relative;
 }
 
 .case-wrap__item img {
@@ -300,7 +299,7 @@ a {
 
 .case-wrap__item--category {
   position: absolute;
-  top: 63%;
+  top: 57vw;
   left: 5%;
   padding: 5px 10px;
   background-color: white;
@@ -309,16 +308,195 @@ a {
 
 .case-wrap__item--name {
   text-align: left;
-  margin: 40px 0 20px 20px;
+  margin: 40px 0 20px 0;
 }
 
 .case-wrap__item--txt {
+  text-align: left;
   width: 100%;
   font-size: 20px;
-  display: inline-block;
-  word-wrap: break-word;
+  display: block;
+  overflow-wrap: break-word;
 }
 
+/* ここからprice */
+.price-wrap {
+  text-align: center;
+  align-items: center;
+}
+
+.price-wrap__ttl {
+  font-size: 26px;
+}
+
+.price-wrap__card {
+  box-shadow: 0px 0px 6px #DEDEDE;
+  margin: 40px 20px;
+  border-radius: 15px;
+}
+
+.price-wrap__card--header {
+  background-color: #6F99E3;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.price-wrap__card--header p {
+  color: white;
+  padding: 10px 0 5px 0;
+}
+
+.price-wrap__card--header h2 {
+  font-size: 38px;
+  color: white;
+  padding: 10px 0 10px 0;
+}
+
+.price-wrap__card--header h2 span {
+  font-size: 22px;
+}
+
+.price-wrap__card--header--pink {
+  background-color: #E37AB0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.price-wrap__card--header--pink p {
+  color: white;
+  padding: 10px 0 5px 0;
+}
+
+.price-wrap__card--header--pink h2 {
+  font-size: 38px;
+  color: white;
+  padding: 10px 0 10px 0;
+}
+
+.price-wrap__card--header--pink h2 span {
+  font-size: 22px;
+}
+
+.price-wrap__card--body p {
+  margin: 20px auto;
+  border-bottom: 1px solid #DEDEDE;
+  width: 300px;
+  line-height: 30px;
+  color: #535353;
+}
+
+.price-wrap__card--body a {
+  display: inline-block;
+  padding: 20px 100px;
+  background-color: #E8E8E8;
+  border-radius: 30px;
+  color: black;
+  margin: 15px 30px 30px 30px;
+  white-space: nowrap;
+  width: auto;
+}
+
+/* price終了 */
+/* ここからqa */
+.qa-wrap {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.qa-wrap__ttl {
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+
+.qa-wrap .qa-list__item {
+  margin-bottom: 30px;
+}
+
+.qa-wrap .qa-list__item--question {
+  padding: 20px 40px;
+  border: 1px solid #E37AB0;
+  color: #E37AB0;
+  border-radius: 15px;
+  text-align: left;
+  position: relative;
+}
+
+.qa-wrap .qa-list__item--question :before {
+  content: "Q";
+  position: absolute;
+  top: 57%;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  transform: translate(0, -50%);
+  font-size: 22px;
+}
+
+.qa-wrap .qa-list__item--question :after {
+  content: "∨";
+  position: absolute;
+  top: 62%;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  transform: translate(0, -50%);
+  color: black;
+}
+
+.qa-wrap .qa-list__item--answer {
+  text-align: left;
+  padding: 20px 20px 20px 50px;
+  position: relative;
+}
+
+.qa-wrap .qa-list__item--answer :before {
+  content: "A";
+  position: absolute;
+  top: 22%;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  transform: translate(0, -50%);
+  font-size: 22px;
+  color: #6F99E3;
+  font-weight: bold;
+}
+
+/* qa終了 */
+/* ここからフッター */
+.footer {
+  text-align: left;
+  background-color: #FFF7FB;
+  padding-top: 70px;
+}
+
+.footer .top-footer img {
+  margin: 0px 0px 20px 30px;
+  display: inline-block;
+}
+
+.footer .top-footer__contents {
+  margin-left: 70px;
+  line-height: 40px;
+}
+
+.footer small {
+  margin: 0 auto;
+  display: block;
+}
+
+.footer__copy {
+  text-align: center;
+  background-color: #FFF7FB;
+  padding-top: 70px;
+}
+
+.footer__copy small {
+  padding: 20px 140px;
+  display: block;
+}
+
+/* フッター終了 */
 @media screen and (min-width: 769px) {
   /* ここからヘッダー　*/
   .top-header {
@@ -536,6 +714,7 @@ a {
     padding: 20px 100px;
   }
   /* cta-section終了 */
+  /* ここからcase */
   .case-wrap {
     padding-bottom: 70px;
   }
@@ -545,20 +724,84 @@ a {
   }
   .case-wrap__items {
     overflow-x: visible;
+    white-space: normal;
     width: 100%;
   }
   .case-wrap__item {
     margin: 0 15px;
-    width: 18%;
+    min-width: auto;
+    width: 100%;
+    position: relative;
+  }
+  .case-wrap__item--name {
+    text-align: left;
+    margin: 40px 0 20px 0;
   }
   .case-wrap__item img {
     width: 100%;
   }
   .case-wrap__item--category {
     position: absolute;
-    top: 50%;
+    top: 11vw;
   }
   .case-wrap__item--txt {
     word-wrap: break-word;
+  }
+  /* case終了 */
+  /* ここからprice */
+  .price-wrap .blue {
+    height: 80%;
+  }
+  .price-wrap__ttl {
+    font-size: 38px;
+  }
+  .price-wrap .card-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .price-wrap__card {
+    margin: 40px 0;
+  }
+  /* price終了 */
+  /* ここからqa */
+  .qa-wrap {
+    padding: 0 320px;
+    margin: 70px 0;
+  }
+  .qa-wrap__ttl {
+    font-size: 38px;
+  }
+  .qa-wrap .qa-list__item--question :before {
+    content: "Q";
+    position: absolute;
+    top: 58%;
+    left: 10px;
+  }
+  .qa-wrap .qa-list__item--question :after {
+    content: "∨";
+    position: absolute;
+    top: 62%;
+    right: 10px;
+  }
+  .qa-wrap .qa-list__item--answer :before {
+    content: "A";
+    position: absolute;
+    top: 35%;
+    left: 10px;
+  }
+  /* qa終了 */
+  /* ここからフッター */
+  .footer .top-footer {
+    vertical-align: top;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;
+    position: relative;
+  }
+  .footer img {
+    margin: initial;
+    display: block;
+    height: 90%;
   }
 }
