@@ -27,20 +27,19 @@ a {
 }
 
 /* ここからfirst-view */
-.pc {
-  display: none;
-}
-
-.sp {
-  display: block;
-  width: 100vw;
-}
-
 .firstview-wrap {
-  border: 1px solid;
   text-align: center;
   position: relative;
   width: 100vw;
+  height: 720px;
+  margin-bottom: 40px;
+}
+
+.firstview-wrap__background-img {
+  background-image: url(img/fv__bg-sp.svg);
+  height: 100%;
+  width: auto;
+  background-size: cover;
 }
 
 .firstview-wrap__contents {
@@ -65,18 +64,16 @@ a {
 
 .firstview-wrap__img {
   position: absolute;
-  top: 30%;
-  left: 30px;
+  top: 25%;
   width: 100%;
 }
 
 .firstview-wrap__img img {
-  width: 80%;
+  width: 90%;
 }
 
 .firstview-wrap__cta-btn--sp {
   padding: 20px 80px;
-  margin-bottom: 200px;
   background-color: #E37AB0;
   border-radius: 30px;
   display: inline-block;
@@ -110,7 +107,8 @@ a {
 /* ここからtrouble */
 .trouble-wrap {
   text-align: center;
-  height: 650px;
+  height: auto;
+  padding: 0 20px;
 }
 
 .trouble-wrap__ttl {
@@ -118,20 +116,207 @@ a {
   margin: 70px 0 40px 0;
 }
 
-.trouble-wrap__card {
+.trouble-wrap__card--1 {
   display: flex;
   margin-bottom: 47px;
   padding: 0 15px;
 }
 
-.trouble-wrap__card__txt {
+.trouble-wrap__card--1__txt {
   font-size: 16px;
   margin: auto 0;
   text-align: left;
 }
 
-.trouble-wrap__card__img img {
-  width: 60%;
+.trouble-wrap__card--1__img img {
+  width: 65%;
+}
+
+.trouble-wrap__card--2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 47px;
+  padding: 0 15px;
+}
+
+.trouble-wrap__card--2__txt {
+  font-size: 16px;
+  margin: auto 0;
+  text-align: left;
+}
+
+.trouble-wrap__card--2__img img {
+  width: 65%;
+}
+
+.trouble-wrap__card--3 {
+  display: flex;
+  margin-bottom: 47px;
+  padding: 0 15px;
+}
+
+.trouble-wrap__card--3__txt {
+  font-size: 16px;
+  margin: auto 0;
+  text-align: left;
+}
+
+.trouble-wrap__card--3__img img {
+  width: 65%;
+}
+
+/* trouble終了 */
+/* ここからsolution */
+.solution-wrap {
+  height: auto;
+  background-color: #FFF7FB;
+  padding-bottom: 70px;
+}
+
+.solution-wrap__ttl {
+  text-align: center;
+  font-size: 26px;
+  padding-top: 70px;
+}
+
+.solution-wrap__item {
+  text-align: left;
+  margin: 0 auto;
+}
+
+.solution-wrap__item__number {
+  font-size: 26px;
+  margin: 40px 0 0 20px;
+  color: #E37AB0;
+}
+
+.solution-wrap__item__ttl {
+  font-size: 22px;
+  margin: 0px 20px 25px 20px;
+  text-align: left;
+}
+
+.solution-wrap__item__txt {
+  margin: 0 20px 25px 20px;
+}
+
+.solution-wrap__item img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* solution終了 */
+/* ここからfeature */
+.feature-wrap {
+  text-align: center;
+  padding: 70px 0px;
+}
+
+.feature-wrap__ttl {
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+
+.feature-wrap .feature-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-wrap .feature-contents__item {
+  width: 40%;
+  box-shadow: 0 0 6px #E37AB0;
+  box-sizing: border-box;
+  margin: 6px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.feature-wrap .feature-contents p {
+  margin-top: 10px;
+}
+
+/* feature終了　*/
+/* ここからcta-section */
+.cta-section {
+  text-align: center;
+  padding: 70px 18px;
+  background-color: #E37AB0;
+}
+
+.cta-section__ttl {
+  font-size: 22px;
+  color: white;
+}
+
+.cta-section__btn__item--blue {
+  display: block;
+  padding: 20px 130px;
+  margin: 40px 0 25px 0;
+  border-radius: 30px;
+  color: white;
+  background-color: #6F99E3;
+}
+
+.cta-section__btn__item--white {
+  display: block;
+  padding: 20px 130px;
+  margin: 40px 0 25px 0;
+  border-radius: 30px;
+  color: #E37AB0;
+  background-color: white;
+}
+
+/* cta-section終了 */
+/* ここからcase */
+.case-wrap {
+  text-align: center;
+}
+
+.case-wrap__ttl {
+  font-size: 26px;
+  margin: 70px 0 40px 0;
+}
+
+.case-wrap__items {
+  display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.case-wrap__item {
+  box-shadow: 0px 0px 6px #DDDDDD;
+  position: relative;
+  border-radius: 15px;
+  width: 90%;
+  margin-bottom: 100px;
+  padding-bottom: 40px;
+}
+
+.case-wrap__item img {
+  width: 100%;
+}
+
+.case-wrap__item--category {
+  position: absolute;
+  top: 63%;
+  left: 5%;
+  padding: 5px 10px;
+  background-color: white;
+  border: 1px solid #E37AB0;
+}
+
+.case-wrap__item--name {
+  text-align: left;
+  margin: 40px 0 20px 20px;
+}
+
+.case-wrap__item--txt {
+  width: 100%;
+  font-size: 20px;
+  display: inline-block;
+  word-wrap: break-word;
 }
 
 @media screen and (min-width: 769px) {
@@ -170,14 +355,11 @@ a {
   }
   /* ヘッダー終了 */
   /* ここからfirstview */
-  .pc {
-    display: block;
-  }
-  .sp {
-    display: none;
-  }
   .firstview-wrap {
     position: relative;
+  }
+  .firstview-wrap__background-img {
+    background-image: url(./img/fv__bg-pc.svg);
   }
   .firstview-wrap__contents {
     position: absolute;
@@ -245,17 +427,138 @@ a {
   .trouble-wrap .card-wrap {
     display: flex;
   }
-  .trouble-wrap__card {
+  .trouble-wrap__card--1 {
     display: block;
     width: 100%;
   }
-  .trouble-wrap__card__img img {
-    width: 70%;
+  .trouble-wrap__card--1__img img {
+    width: 80%;
   }
-  .trouble-wrap__card__txt {
+  .trouble-wrap__card--1__txt {
     text-align: center;
     font-size: 22px;
     width: 60%;
     margin: 25px auto;
+  }
+  .trouble-wrap__card--2 {
+    display: block;
+    width: 100%;
+  }
+  .trouble-wrap__card--2__img img {
+    width: 80%;
+  }
+  .trouble-wrap__card--2__txt {
+    text-align: center;
+    font-size: 22px;
+    width: 60%;
+    margin: 25px auto;
+  }
+  .trouble-wrap__card--3 {
+    display: block;
+    width: 100%;
+  }
+  .trouble-wrap__card--3__img img {
+    width: 80%;
+  }
+  .trouble-wrap__card--3__txt {
+    text-align: center;
+    font-size: 22px;
+    width: 60%;
+    margin: 25px auto;
+  }
+  /* trouble終了 */
+  /* ここからsolution */
+  .solution-wrap {
+    height: auto;
+    padding: 0px 220px;
+  }
+  .solution-wrap .img-01, .solution-wrap .img-03 {
+    margin-left: 90px;
+  }
+  .solution-wrap .img-02 {
+    margin-right: 90px;
+  }
+  .solution-wrap div:nth-child(3) {
+    flex-direction: row-reverse;
+  }
+  .solution-wrap__ttl {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+  .solution-wrap__item {
+    padding-bottom: 40px;
+    display: flex;
+    width: 100%;
+  }
+  .solution-wrap__item__number {
+    font-size: 40px;
+  }
+  .solution-wrap__item__ttl {
+    font-size: 32px;
+  }
+  .solution-wrap__item img {
+    width: 100%;
+    display: block;
+  }
+  /* solution終了 */
+  /* ここからfeature */
+  .feature-wrap {
+    padding: 70px 220px;
+  }
+  .feature-wrap__ttl {
+    font-size: 38px;
+  }
+  .feature-wrap .feature-contents {
+    flex-wrap: nowrap;
+  }
+  .feature-wrap .feature-contents__item {
+    margin: 0 10px;
+    padding: 20px 30px;
+    width: 100%;
+  }
+  /* feature終了 */
+  /* ここからcta-section */
+  .cta-section {
+    text-align: center;
+  }
+  .cta-section__ttl {
+    font-size: 32px;
+  }
+  .cta-section__btn {
+    display: flex;
+    justify-content: center;
+  }
+  .cta-section__btn__item--blue {
+    margin-right: 12px;
+  }
+  .cta-section__btn__item--white {
+    margin-left: 12px;
+    padding: 20px 100px;
+  }
+  /* cta-section終了 */
+  .case-wrap {
+    padding-bottom: 70px;
+  }
+  .case-wrap__ttl {
+    font-size: 38px;
+    width: 100%;
+  }
+  .case-wrap__items {
+    overflow-x: visible;
+    width: 100%;
+  }
+  .case-wrap__item {
+    margin: 0 15px;
+    width: 18%;
+  }
+  .case-wrap__item img {
+    width: 100%;
+  }
+  .case-wrap__item--category {
+    position: absolute;
+    top: 50%;
+  }
+  .case-wrap__item--txt {
+    word-wrap: break-word;
   }
 }

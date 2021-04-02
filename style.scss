@@ -23,20 +23,19 @@ a{
   }
 
 /* ここからfirst-view */
-.pc{
-  display: none;
-}
-
-.sp{
-  display: block;
-  width: 100vw;
-}
 
 .firstview-wrap{
-  border: 1px solid;
   text-align: center;
   position: relative;
   width: 100vw;
+  height: 720px;
+  margin-bottom: 40px;
+  &__background-img{
+    background-image: url(img/fv__bg-sp.svg);
+    height: 100%;
+    width: auto;
+    background-size: cover;
+  }
   &__contents{
     position: absolute;
     top: 5%;
@@ -55,16 +54,14 @@ a{
   }
   &__img{
     position: absolute;
-    top: 30%;
-    left: 30px;
+    top: 25%;
     width: 100%;
     img{
-      width: 80%;
+      width: 90%;
     }
   }
   &__cta-btn--sp{
     padding: 20px 80px;
-    margin-bottom: 200px;
     background-color: #E37AB0;
     border-radius: 30px;
     display: inline-block;
@@ -97,12 +94,13 @@ a{
 /* ここからtrouble */
 .trouble-wrap{
   text-align: center;
-  height: 650px;
+  height: auto;
+  padding: 0 20px;
   &__ttl{
     font-size: 26px;
     margin: 70px 0 40px 0;
   }
-  &__card{
+  &__card--1{
     display: flex;
     margin-bottom: 47px;
     padding: 0 15px;
@@ -112,7 +110,170 @@ a{
       text-align: left;
     }
     &__img img{
-      width: 60%;
+      width: 65%;
+    }
+  }
+  &__card--2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 47px;
+    padding: 0 15px;
+    &__txt{
+      font-size: 16px;
+      margin: auto 0;
+      text-align: left;
+    }
+    &__img img{
+      width: 65%;
+    }
+  }
+  &__card--3{
+    display: flex;
+    margin-bottom: 47px;
+    padding: 0 15px;
+    &__txt{
+      font-size: 16px;
+      margin: auto 0;
+      text-align: left;
+    }
+    &__img img{
+      width: 65%;
+    }
+  }
+}
+/* trouble終了 */
+
+/* ここからsolution */
+.solution-wrap{
+    height: auto;
+    background-color: #FFF7FB;
+    padding-bottom: 70px;
+    &__ttl{
+    text-align: center;
+    font-size: 26px;
+    padding-top: 70px;
+    }
+    &__item{
+      text-align: left;
+      margin: 0 auto;
+      &__number{
+        font-size: 26px;
+        margin: 40px 0 0 20px;
+        color: #E37AB0;
+      }
+      &__ttl{
+        font-size: 22px;
+        margin: 0px 20px 25px 20px;
+        text-align: left;
+      }
+      &__txt{
+      margin: 0 20px 25px 20px;
+      }
+      img{
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+  /* solution終了 */
+
+  /* ここからfeature */
+  .feature-wrap{
+    text-align: center;
+    padding: 70px 0px;
+    &__ttl{
+      font-size: 26px;
+      margin-bottom: 40px;
+    }
+    .feature-contents{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      &__item{
+        width: 40%;
+        box-shadow: 0 0 6px #E37AB0;
+        box-sizing: border-box;
+        margin: 6px;
+        padding: 10px;
+        border-radius: 15px;
+      }
+      p{
+        margin-top: 10px;
+      }
+    }
+  }
+  /* feature終了　*/
+
+  /* ここからcta-section */
+  .cta-section{
+    text-align: center;
+    padding: 70px 18px;
+    background-color: #E37AB0;
+    &__ttl{
+      font-size: 22px;
+      color: white;
+    }
+    &__btn{
+      &__item--blue{
+      display: block;
+      padding: 20px 130px;
+      margin: 40px 0 25px 0;
+      border-radius: 30px;
+      color: white;
+      background-color: #6F99E3;
+      }
+      &__item--white{
+      display: block;
+      padding: 20px 130px;
+      margin: 40px 0 25px 0;
+      border-radius: 30px;
+      color:#E37AB0;
+      background-color:white;
+      }
+    }
+  }
+  /* cta-section終了 */
+
+  /* ここからcase */
+.case-wrap{
+  text-align: center;
+  &__ttl{
+    font-size: 26px;
+    margin: 70px 0 40px 0;
+  }
+  &__items{
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  &__item{
+    box-shadow: 0px 0px 6px #DDDDDD;
+    position: relative;
+    border-radius: 15px;
+    width: 90%;
+    margin-bottom: 100px;
+    padding-bottom: 40px;
+    img{
+      width: 100%;
+    }
+    &--category{
+      position: absolute;
+      top: 63%;
+      left: 5%;
+      padding: 5px 10px;
+      background-color: white;
+      border: 1px solid #E37AB0;
+    }
+    &--name{
+      text-align: left;
+      margin: 40px 0 20px 20px;
+    }
+    &--txt{
+      width: 100%;
+      font-size: 20px;
+      display: inline-block;
+      word-wrap: break-word;
     }
   }
 }
@@ -157,14 +318,12 @@ a{
   /* ヘッダー終了 */
 
   /* ここからfirstview */
-  .pc{
-    display: block;
-  }
-  .sp{
-    display: none;
-  }
+  
   .firstview-wrap{
     position: relative;
+    &__background-img{
+    background-image: url(./img/fv__bg-pc.svg);
+  }
     &__contents{
       position: absolute;
       top: 20%;
@@ -234,11 +393,37 @@ a{
     .card-wrap{
       display: flex;
     }
-    &__card{
+    &__card--1{
       display: block;
       width: 100%;
       &__img img{
-        width: 70%;
+        width: 80%;
+      }
+      &__txt{
+        text-align: center;
+        font-size: 22px;
+        width: 60%;
+        margin: 25px auto;
+      }
+    }
+    &__card--2{
+      display: block;
+      width: 100%;
+      &__img img{
+        width: 80%;
+      }
+      &__txt{
+        text-align: center;
+        font-size: 22px;
+        width: 60%;
+        margin: 25px auto;
+      }
+    }
+    &__card--3{
+      display: block;
+      width: 100%;
+      &__img img{
+        width: 80%;
       }
       &__txt{
         text-align: center;
@@ -248,5 +433,101 @@ a{
       }
     }
   }
+  /* trouble終了 */
 
+  /* ここからsolution */
+  .solution-wrap{
+    height: auto;
+    padding: 0px 220px;
+    .img-01,.img-03{
+      margin-left: 90px;
+    }
+    .img-02{
+      margin-right: 90px;
+    }
+    div:nth-child(3){
+    flex-direction: row-reverse;
+    }
+    &__ttl{
+      font-size: 38px;
+      margin-bottom: 40px;
+    }
+    &__item{
+      padding-bottom: 40px;
+      display: flex;
+      width: 100%;
+      &__number{
+        font-size: 40px;
+      }
+      &__ttl{
+        font-size: 32px;
+      }
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+  /* solution終了 */
+  /* ここからfeature */
+  .feature-wrap{
+    padding: 70px 220px;
+    &__ttl{
+      font-size: 38px;
+    }
+    .feature-contents{
+      flex-wrap: nowrap;
+      &__item{
+        margin: 0 10px;
+        padding: 20px 30px;
+        width: 100%;
+      }
+    }
+  }
+  /* feature終了 */
+  /* ここからcta-section */
+  .cta-section{
+    text-align: center;
+    &__ttl{
+      font-size: 32px;
+    }
+    &__btn{
+      display: flex;
+      justify-content: center;
+      &__item--blue{
+        margin-right: 12px;
+      }
+      &__item--white{
+        margin-left: 12px;
+        padding: 20px 100px;
+      }
+    }
+  }
+  /* cta-section終了 */
+  
+  .case-wrap{
+    padding-bottom: 70px;
+    &__ttl{
+      font-size: 38px;
+      width: 100%;
+    }
+    &__items{
+      overflow-x: visible;
+      width: 100%;
+    }
+    &__item{
+      margin: 0 15px;
+      width: 18%;
+      img{
+        width: 100%;
+      }
+      &--category{
+        position: absolute;
+        top: 50%;
+      }
+      &--txt{
+        word-wrap: break-word;
+      }
+    }
+  }
 }
